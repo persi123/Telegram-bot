@@ -4,8 +4,8 @@ const {Composer} =require('micro-bot')
 // var bot=new TelegramBot(token,{polling:true});
 var bot = new Composer()
 var request=require("request")
-bot.start((ctx) => ctx.reply('Welcome'))
-bot.start('message', (msg) => {
+
+bot.start((msg) => {
     const chatId = msg.chat.id;
 
   
