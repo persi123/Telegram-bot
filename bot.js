@@ -10,7 +10,7 @@ bot.start((msg) => {
 
   
     // send a message to the chat acknowledging receipt of their message
-    msg.reply("Hi ! This is a  vaccine bot 18+ for  alwar. It will alert you when 18+ vaccine is available in your area. Thanks Prashant");
+    msg.reply("Hi ! This is a  vaccine bot 18+ for  alwar. It will alert you when 18+ vaccine is available in your area. Thanks , Prashant");
     //debug error
     // bot.on("polling_error", (msg) => console.log(msg));
    
@@ -35,7 +35,7 @@ bot.start((msg) => {
     }
     // setTimeout(temprature, 1000);
    
-    setInterval(temprature, 3500);
+  return  setInterval(temprature, 3500);
     // temprature()
   });
 
