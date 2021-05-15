@@ -38,3 +38,5 @@ bot.on('message', (msg) => {
     setInterval(temprature, 3500);
     // temprature()
   });
+
+  module.exports=bot;
