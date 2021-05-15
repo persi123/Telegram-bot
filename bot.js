@@ -2,10 +2,10 @@ const {Composer} =require('micro-bot')
 // var TelegramBot=require("node-telegram-bot-api");
 // var token ="1213790461:AAH8-j4nOsCd-s3ZD5LP_Pv_QtzbcJDL8fA"
 // var bot=new TelegramBot(token,{polling:true});
-var bot =new Composer
+var bot = new Composer
 var request=require("request")
 
-bot.on('message', (msg) => {
+bot.start('message', (msg) => {
     const chatId = msg.chat.id;
 
   
