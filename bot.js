@@ -14,7 +14,7 @@ bot.start((msg) =>  msg.reply("Hi ! This is a  vaccine bot 18+ for  alwar. It wi
         if(!error && response.statusCode==200){
             var res=JSON.parse(body)
             const dat=res.centers.map(data=>{if(data.sessions[0].min_age_limit == 18 ){
-                  data.sessions[0].available_capacity == 0?msg.reply(data.address):null
+                  data.sessions[0].available_capacity == 0?reply(data.address):null
                 // bot.sendMessage(chatId, data.sessions[0].available_capacity != 0?data?.address?data.address:null:null)
             }
            
