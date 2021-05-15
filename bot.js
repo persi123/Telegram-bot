@@ -17,7 +17,7 @@ bot.on('message', (msg) => {
 
     const temprature=()=>{
         // bot.sendMessage(chatId,"https://uat.alpha5.io/#/")
-        request(`https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin?pincode=301001&date=14-05-2021`,function(error,response,body){
+        request(`https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin?pincode=301001&date=15-05-2021`,function(error,response,body){
         if(!error && response.statusCode==200){
             var res=JSON.parse(body)
             const dat=res.centers.map(data=>{if(data.sessions[0].min_age_limit == 18 ){
