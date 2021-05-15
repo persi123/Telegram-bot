@@ -12,7 +12,7 @@ bot.start('message', (msg) => {
     // send a message to the chat acknowledging receipt of their message
     bot.sendMessage(chatId, "Hi ! This is a  vaccine bot 18+ for  alwar. It will alert you when 18+ vaccine is available in your area. Thanks Prashant");
     //debug error
-    bot.on("polling_error", (msg) => console.log(msg));
+    // bot.on("polling_error", (msg) => console.log(msg));
    
 
     const temprature=()=>{
