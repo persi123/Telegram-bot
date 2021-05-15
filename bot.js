@@ -5,16 +5,9 @@ const {Composer} =require('micro-bot')
 var bot = new Composer()
 var request=require("request")
 
-bot.start((msg) => {
-    const chatId = msg.chat.id;
+bot.start((msg) =>  msg.reply("Hi ! This is a  vaccine bot 18+ for  alwar. It will alert you when 18+ vaccine is available in your area. Thanks , Prashant"));
 
-  
-    // send a message to the chat acknowledging receipt of their message
-    msg.reply("Hi ! This is a  vaccine bot 18+ for  alwar. It will alert you when 18+ vaccine is available in your area. Thanks , Prashant");
-    //debug error
-    // bot.on("polling_error", (msg) => console.log(msg));
-   
-
+  bot.on('', ({ reply }) =>{
     const temprature=()=>{
         // bot.sendMessage(chatId,"https://uat.alpha5.io/#/")
         request(`https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin?pincode=301001&date=15-05-2021`,function(error,response,body){
@@ -34,9 +27,8 @@ bot.start((msg) => {
     })
     }
     // setTimeout(temprature, 1000);
-   
-  return  setInterval(temprature, 3500);
-    // temprature()
-  });
-
+    
+    return  setInterval(temprature, 3500);
+  })
+  
   module.exports=bot;
