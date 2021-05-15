@@ -1,0 +1,20 @@
+{
+  "name": "bot-tele",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+  "start":"mocro-bot"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "config": "^3.3.1",
+    "dotenv": "^8.2.0",
+    "micro-bot": "^2.5.3",
+    "node-telegram-bot-api": "^0.50.0",
+    "request": "^2.88.2"
+  }
+}
